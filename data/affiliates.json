@@ -1,0 +1,42 @@
+{
+  "vernis": {
+    "name": "電話占いヴェルニ",
+    "category": "spiritual",
+    "asp": "A8.net",
+    "url": "https://example.com/aff/vernis",
+    "reward": 5000,
+    "description": "創業20年以上の老舗電話占い。厳選された占い師が1000名以上在籍。初回最大4000円分無料。",
+    "features": ["初回4000円無料", "占い師1000名以上", "24時間対応"],
+    "active": true
+  },
+  "line-uranai": {
+    "name": "LINEトーク占い",
+    "category": "love",
+    "asp": "A8.net",
+    "url": "https://example.com/aff/line-uranai",
+    "reward": 3000,
+    "description": "LINEアプリから簡単に相談できるチャット占い。初回10分無料。",
+    "features": ["初回10分無料", "LINEで簡単", "チャット・電話対応"],
+    "active": true
+  },
+  "coconala-uranai": {
+    "name": "ココナラ占い",
+    "category": "spiritual",
+    "asp": "もしもアフィリエイト",
+    "url": "https://example.com/aff/coconala",
+    "reward": 2000,
+    "description": "500円から気軽に占いが受けられる。多彩な占術に対応。",
+    "features": ["500円から", "多彩な占術", "テキスト鑑定あり"],
+    "active": true
+  },
+  "excite-uranai": {
+    "name": "エキサイト電話占い",
+    "category": "love",
+    "asp": "アクセストレード",
+    "url": "https://example.com/aff/excite",
+    "reward": 4000,
+    "description": "初回最大8500円分無料。恋愛相談に強い占い師が多数在籍。",
+    "features": ["初回8500円無料", "恋愛相談に強い", "24時間対応"],
+    "active": true
+  }
+}
