@@ -1,10 +1,14 @@
 import Link from "next/link";
 import categories from "@/data/categories.json";
+import SidebarDiagnosis from "./SidebarDiagnosis";
 
 export default function Sidebar() {
   return (
     <aside className="hidden lg:block w-72 shrink-0">
       <div className="sticky top-24 space-y-6">
+        {/* ミニ診断ツール */}
+        <SidebarDiagnosis />
+
         {/* カテゴリ一覧 */}
         <div className="bg-white rounded-lg border border-purple-200 p-5">
           <h3 className="font-bold text-purple-900 mb-4">カテゴリ</h3>
@@ -24,12 +28,6 @@ export default function Sidebar() {
               </li>
             ))}
           </ul>
-        </div>
-
-        {/* 人気記事 */}
-        <div className="bg-white rounded-lg border border-purple-200 p-5">
-          <h3 className="font-bold text-purple-900 mb-4">人気記事</h3>
-          <p className="text-sm text-purple-400/50">記事が追加されると表示されます</p>
         </div>
       </div>
     </aside>

@@ -85,10 +85,44 @@ export default async function ArticlePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: article.content }}
       />
 
+      {/* 関連記事リンク */}
+      {(category === "seikaku" || category === "unmei") && (() => {
+        const shukuName = category === "seikaku"
+          ? slug.replace("shuku", "")
+          : slug.replace("unmei", "");
+        const otherCategory = category === "seikaku" ? "unmei" : "seikaku";
+        const otherSlug = category === "seikaku" ? `${shukuName}unmei` : `${shukuName}shuku`;
+        const otherLabel = category === "seikaku" ? `${shukuName}宿の恋愛・運勢を見る` : `${shukuName}宿の性格・才能を見る`;
+        return (
+          <section className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link
+              href={`/${otherCategory}/${otherSlug}`}
+              className="flex items-center gap-3 bg-white border border-purple-200 rounded-xl p-4 hover:border-purple-400 hover:shadow-md transition-all group"
+            >
+              <span className="text-2xl">📖</span>
+              <div>
+                <p className="text-xs text-purple-400 mb-0.5">関連記事</p>
+                <p className="text-sm font-bold text-purple-800 group-hover:text-purple-600">{otherLabel} →</p>
+              </div>
+            </Link>
+            <Link
+              href="/aishyo"
+              className="flex items-center gap-3 bg-white border border-purple-200 rounded-xl p-4 hover:border-purple-400 hover:shadow-md transition-all group"
+            >
+              <span className="text-2xl">💫</span>
+              <div>
+                <p className="text-xs text-purple-400 mb-0.5">診断ツール</p>
+                <p className="text-sm font-bold text-purple-800 group-hover:text-purple-600">{shukuName}宿の相性を調べる →</p>
+              </div>
+            </Link>
+          </section>
+        );
+      })()}
+
       {/* アフィリエイトCTA */}
       {article.affiliateIds && article.affiliateIds.length > 0 && (
-        <section className="mt-12 space-y-6">
-          <h2 className="text-xl font-bold text-purple-900">おすすめサービス</h2>
+        <section className="mt-10 space-y-6">
+          <h2 className="text-xl font-bold text-purple-900">もっと詳しく占いたい方へ</h2>
           {article.affiliateIds.map((id) => (
             <AffiliateLink key={id} id={id} variant="card" />
           ))}
