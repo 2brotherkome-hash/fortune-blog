@@ -1,6 +1,6 @@
 {
   "coconala-tel": {
-    "name": "電話占い【ココナラ】",
+    "name": "電話占い【coconala】",
     "category": "spiritual",
     "asp": "A8.net",
     "url": "https://px.a8.net/svt/ejp?a8mat=4B1CDK+490G0Q+2PEO+C3BAQ",
@@ -10,12 +10,12 @@
     "active": true
   },
   "coconala-uranai": {
-    "name": "ココナラ占い",
+    "name": "coconala占い",
     "category": "love",
     "asp": "A8.net",
     "url": "https://px.a8.net/svt/ejp?a8mat=4B1CDK+49LVMI+2PEO+1BP8ZM",
     "reward": 2000,
-    "description": "TVCMで話題のココナラ占い。テキスト・電話・ビデオ鑑定に対応。無料会員登録で手軽に相談。",
+    "description": "TVCMで話題のcoconala占い。テキスト・電話・ビデオ鑑定に対応。無料会員登録で手軽に相談。",
     "features": ["無料会員登録", "多彩な占術", "テキスト・電話・ビデオ対応"],
     "active": true
   },
