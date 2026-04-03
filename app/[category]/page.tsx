@@ -39,13 +39,13 @@ export default async function CategoryPage({ params }: Props) {
             className="w-4 h-4 rounded-full"
             style={{ backgroundColor: cat.color }}
           />
-          <h1 className="text-2xl font-bold text-gray-900">{cat.name}</h1>
+          <h1 className="text-2xl font-bold text-purple-900">{cat.name}</h1>
         </div>
-        <p className="text-gray-600">{cat.description}</p>
+        <p className="text-purple-600">{cat.description}</p>
       </div>
 
       {articles.length === 0 ? (
-        <div className="bg-white rounded-lg border border-gray-200 p-8 text-center text-gray-500">
+        <div className="bg-white rounded-lg border border-purple-200 p-8 text-center text-purple-400">
           このカテゴリにはまだ記事がありません。
         </div>
       ) : (
