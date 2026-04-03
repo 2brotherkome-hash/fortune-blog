@@ -56,7 +56,7 @@ export default function Home() {
       <section className="mb-8">
         <h2 className="text-xl font-bold text-purple-900 mb-4">カテゴリから探す</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {categories.map((cat) => (
+          {categories.filter((cat) => cat.slug !== "shuku").map((cat) => (
             <Link
               key={cat.slug}
               href={`/${cat.slug}`}
