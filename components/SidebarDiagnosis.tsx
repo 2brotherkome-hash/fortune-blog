@@ -23,7 +23,7 @@ function getShuku(month: number, day: number) {
 export default function SidebarDiagnosis() {
   const [month, setMonth] = useState("");
   const [day, setDay] = useState("");
-  const [result, setResult] = useState<{ name: string } | null>(null);
+  const [result, setResult] = useState<{ name: string; slug: string } | null>(null);
 
   const handleCheck = () => {
     const m = parseInt(month), d = parseInt(day);
