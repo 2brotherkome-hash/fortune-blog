@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${notoSansJP.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-[#0f0a1a] font-[family-name:var(--font-noto-sans-jp)]">
+      <body className="min-h-full flex flex-col bg-[#f5f0ff] font-[family-name:var(--font-noto-sans-jp)]">
         <Header />
         <div className="flex-1 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex gap-8">

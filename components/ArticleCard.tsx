@@ -21,7 +21,7 @@ export default function ArticleCard({
   return (
     <Link
       href={`/${category}/${slug}`}
-      className="block bg-[#1a1225] rounded-lg border border-purple-800/30 p-6 hover:shadow-lg hover:shadow-purple-900/20 transition-shadow"
+      className="block bg-white rounded-lg border border-purple-200 p-6 hover:shadow-lg hover:shadow-purple-200/50 transition-shadow"
     >
       <div className="flex items-center gap-2 mb-3">
         {cat && (
@@ -34,8 +34,8 @@ export default function ArticleCard({
         )}
         <time className="text-xs text-purple-400/50">{date}</time>
       </div>
-      <h2 className="text-lg font-bold text-purple-100 mb-2 line-clamp-2">{title}</h2>
-      <p className="text-sm text-purple-300/70 line-clamp-3">{description}</p>
+      <h2 className="text-lg font-bold text-purple-900 mb-2 line-clamp-2">{title}</h2>
+      <p className="text-sm text-purple-600/70 line-clamp-3">{description}</p>
     </Link>
   );
 }

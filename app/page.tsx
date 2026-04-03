@@ -24,14 +24,14 @@ export default function Home() {
           <Link
             key={cat.slug}
             href={`/${cat.slug}`}
-            className="bg-[#1a1225] rounded-lg border border-purple-800/30 p-4 text-center hover:shadow-lg hover:shadow-purple-900/20 transition-shadow"
+            className="bg-white rounded-lg border border-purple-200 p-4 text-center hover:shadow-lg hover:shadow-purple-900/20 transition-shadow"
           >
             <div
               className="w-3 h-3 rounded-full mx-auto mb-2"
               style={{ backgroundColor: cat.color }}
             />
-            <h2 className="font-bold text-purple-100 text-sm">{cat.name}</h2>
-            <p className="text-xs text-purple-300/70 mt-1 line-clamp-2">
+            <h2 className="font-bold text-purple-800 text-sm">{cat.name}</h2>
+            <p className="text-xs text-purple-600/70 mt-1 line-clamp-2">
               {cat.description}
             </p>
           </Link>
@@ -40,9 +40,9 @@ export default function Home() {
 
       {/* 最新記事 */}
       <section>
-        <h2 className="text-xl font-bold text-purple-100 mb-4">最新記事</h2>
+        <h2 className="text-xl font-bold text-purple-900 mb-4">最新記事</h2>
         {articles.length === 0 ? (
-          <div className="bg-[#1a1225] rounded-lg border border-purple-800/30 p-8 text-center text-purple-300">
+          <div className="bg-white rounded-lg border border-purple-200 p-8 text-center text-purple-400">
             記事が追加されると表示されます
           </div>
         ) : (

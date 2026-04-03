@@ -24,14 +24,14 @@ export default function AffiliateLink({ id, variant = "button" }: AffiliateLinkP
 
   if (variant === "card") {
     return (
-      <div className="border border-purple-700/40 rounded-lg p-5 bg-[#1a1225]">
-        <h4 className="font-bold text-purple-100 mb-2">{aff.name}</h4>
-        <p className="text-sm text-purple-300/70 mb-3">{aff.description}</p>
+      <div className="border border-purple-200 rounded-lg p-5 bg-white">
+        <h4 className="font-bold text-purple-900 mb-2">{aff.name}</h4>
+        <p className="text-sm text-purple-600/70 mb-3">{aff.description}</p>
         <ul className="flex flex-wrap gap-2 mb-4">
           {aff.features.map((f) => (
             <li
               key={f}
-              className="text-xs bg-purple-900/50 text-purple-300 px-2 py-1 rounded"
+              className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded"
             >
               {f}
             </li>
