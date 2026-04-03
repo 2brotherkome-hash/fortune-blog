@@ -17,7 +17,7 @@ export default function CTAButton({ id, text }: CTAButtonProps) {
         rel="noopener noreferrer nofollow"
         className="inline-block bg-gradient-to-r from-purple-500 to-violet-500 text-white font-bold text-lg px-8 py-4 rounded-xl hover:from-purple-400 hover:to-violet-400 transition-all shadow-lg shadow-purple-900/50"
       >
-        {text || `${aff.name}を無料で登録する`}
+        {text || `${aff.name} 無料会員登録はこちら`}
       </a>
       <p className="text-xs text-purple-400/50 mt-2">※無料会員登録後すぐに相談できます</p>
     </div>

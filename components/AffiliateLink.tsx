@@ -43,7 +43,7 @@ export default function AffiliateLink({ id, variant = "button" }: AffiliateLinkP
           rel="noopener noreferrer nofollow"
           className="block w-full text-center bg-gradient-to-r from-purple-600 to-violet-600 text-white font-bold py-3 rounded-lg hover:from-purple-500 hover:to-violet-500 transition-all"
         >
-          無料で登録する
+          無料会員登録はこちら
         </a>
       </div>
     );
@@ -57,7 +57,7 @@ export default function AffiliateLink({ id, variant = "button" }: AffiliateLinkP
       rel="noopener noreferrer nofollow"
       className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-violet-600 text-white font-bold px-6 py-3 rounded-lg hover:from-purple-500 hover:to-violet-500 transition-all"
     >
-      {aff.name}で今すぐ相談する
+      {aff.name} 無料会員登録はこちら
     </a>
   );
 }
