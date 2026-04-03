@@ -59,11 +59,6 @@ export default function ShukuDiagnosisTool() {
 
   return (
     <div className="bg-gradient-to-br from-purple-900 to-violet-800 rounded-2xl p-8 text-white">
-      <h2 className="text-2xl font-bold text-center mb-2">あなたの宿を調べる</h2>
-      <p className="text-purple-200 text-center text-sm mb-6">
-        生年月日の「月」と「日」を入力するだけ
-      </p>
-
       <div className="flex gap-3 justify-center mb-4">
         <div className="flex items-center gap-2">
           <input
