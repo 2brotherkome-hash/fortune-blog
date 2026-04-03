@@ -7,7 +7,7 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-purple-400">
-            星知恵
+            宿曜占い｜誕生日の宿
           </Link>
           <nav className="hidden md:flex gap-6">
             {categories.map((cat) => (

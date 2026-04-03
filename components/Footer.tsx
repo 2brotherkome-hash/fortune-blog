@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-purple-200 font-bold text-lg mb-3">星知恵</h3>
+            <h3 className="text-purple-200 font-bold text-lg mb-3">宿曜占い｜誕生日の宿</h3>
             <p className="text-sm leading-relaxed">
               宿曜占星術の専門サイト。生年月日から27の宿を無料診断。空海が伝えた1200年の星の学問で、あなたの運命を紐解きます。
             </p>
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-purple-800/30 mt-8 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} 星知恵. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} 宿曜占い｜誕生日の宿. All rights reserved.</p>
           <p className="mt-1 text-xs text-purple-400/50">
             ※当サイトの記事にはアフィリエイトリンクが含まれます。
           </p>
