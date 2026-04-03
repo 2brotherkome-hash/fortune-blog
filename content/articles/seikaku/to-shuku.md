@@ -3,7 +3,7 @@ title: "斗宿（としゅく）の性格・運勢・恋愛・相性【宿曜占
 description: "斗宿（としゅく）生まれの性格、恋愛傾向、仕事運、相性の良い宿を宿曜占星術で徹底解説。"
 category: "seikaku"
 date: "2026-04-01"
-affiliateIds: ["vernis", "line-uranai"]
+affiliateIds: ["coconala-tel", "coconala-uranai"]
 ---
 
 ## 斗宿（としゅく）とは

@@ -3,7 +3,7 @@ title: "畢宿（ひっしゅく）の性格・運勢・恋愛・相性【宿曜
 description: "畢宿（ひっしゅく）生まれの性格、恋愛傾向、仕事運、相性の良い宿を宿曜占星術で徹底解説。"
 category: "seikaku"
 date: "2026-04-01"
-affiliateIds: ["vernis", "line-uranai"]
+affiliateIds: ["coconala-tel", "coconala-uranai"]
 ---
 
 ## 畢宿（ひっしゅく）とは

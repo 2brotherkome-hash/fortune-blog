@@ -13,7 +13,7 @@ export default function Sidebar() {
         <div className="bg-white rounded-lg border border-purple-200 p-5">
           <h3 className="font-bold text-purple-900 mb-4">カテゴリ</h3>
           <ul className="space-y-3">
-            {categories.map((cat) => (
+            {categories.filter((cat) => cat.slug !== "shuku").map((cat) => (
               <li key={cat.slug}>
                 <Link
                   href={`/${cat.slug}`}

@@ -19,7 +19,7 @@ export default function CTAButton({ id, text }: CTAButtonProps) {
       >
         {text || `${aff.name}を無料で登録する`}
       </a>
-      <p className="text-xs text-purple-400/50 mt-2">※申し込みは最短5分で完了します</p>
+      <p className="text-xs text-purple-400/50 mt-2">※無料会員登録後すぐに相談できます</p>
     </div>
   );
 }

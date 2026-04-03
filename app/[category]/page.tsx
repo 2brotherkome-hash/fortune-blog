@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import type { Metadata } from "next";
 import ArticleCard from "@/components/ArticleCard";
 import { getArticlesByCategory } from "@/lib/markdown";
@@ -28,6 +28,11 @@ export default async function CategoryPage({ params }: Props) {
   const { category } = await params;
   const cat = categories.find((c) => c.slug === category);
   if (!cat) notFound();
+
+  // shukuは診断ツールページ（ホーム）にリダイレクト
+  if (category === "shuku") redirect("/");
+  // aishyoは相性診断ページにリダイレクト
+  if (category === "aishyo") redirect("/aishyo");
 
   const articles = getArticlesByCategory(category);
 
