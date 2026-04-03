@@ -1,26 +1,26 @@
 [
   {
-    "slug": "horoscope",
-    "name": "星座占い",
-    "description": "12星座別の運勢・性格・相性を詳しく解説",
+    "slug": "shuku",
+    "name": "あなたの宿を調べる",
+    "description": "生年月日から宿曜占星術であなたの宿を診断",
     "color": "#7c3aed"
   },
   {
-    "slug": "love",
-    "name": "恋愛占い",
-    "description": "恋愛運・相性・出会い・復縁の占い",
+    "slug": "seikaku",
+    "name": "宿別・性格診断",
+    "description": "27の宿それぞれの性格・才能・特徴を詳しく解説",
+    "color": "#9333ea"
+  },
+  {
+    "slug": "unmei",
+    "name": "宿別・運勢・恋愛",
+    "description": "あなたの宿から見る恋愛運・仕事運・金運",
     "color": "#ec4899"
   },
   {
-    "slug": "fortune",
-    "name": "金運・仕事運",
-    "description": "金運アップの方法・仕事運・転職のタイミング",
-    "color": "#f59e0b"
-  },
-  {
-    "slug": "spiritual",
-    "name": "スピリチュアル",
-    "description": "タロット・数秘術・パワーストーンの解説",
+    "slug": "aishyo",
+    "name": "宿の相性診断",
+    "description": "二つの宿の相性を詳しく解説",
     "color": "#06b6d4"
   }
 ]

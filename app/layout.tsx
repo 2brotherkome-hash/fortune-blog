@@ -11,13 +11,14 @@ const notoSansJP = Noto_Sans_JP({
   weight: ["400", "500", "700"],
 });
 
+// サイト名は「星知恵」のまま運用中。「宿曜ラボ」への変更はユーザーの判断に委ねる。
 export const metadata: Metadata = {
   title: {
-    default: "星知恵 | 当たる占い・星座占い完全ガイド",
+    default: "星知恵 | 宿曜占星術・無料診断サイト",
     template: "%s | 星知恵",
   },
   description:
-    "星座占い・恋愛占い・金運・スピリチュアルの情報をお届け。12星座別の運勢や相性、おすすめ占いサービスが見つかる。",
+    "生年月日から宿曜占星術であなたの宿（しゅく）を無料診断。空海が伝えた1200年の星の学問で、性格・運勢・恋愛・相性をお届け。",
   openGraph: {
     type: "website",
     locale: "ja_JP",

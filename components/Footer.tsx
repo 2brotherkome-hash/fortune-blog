@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-purple-200 font-bold text-lg mb-3">星知恵</h3>
             <p className="text-sm leading-relaxed">
-              星座占い・恋愛占い・スピリチュアルの情報をお届け。あなたの運命を星の導きで紐解きます。
+              宿曜占星術の専門サイト。生年月日から27の宿を無料診断。空海が伝えた1200年の星の学問で、あなたの運命を紐解きます。
             </p>
           </div>
           <div>
