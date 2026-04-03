@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllArticles } from "@/lib/markdown";
 import categories from "@/data/categories.json";
 
-const BASE_URL = process.env.SITE_URL || "https://mane-chie.vercel.app";
+const BASE_URL = process.env.SITE_URL || "https://fortune-blog-2brotherkome-hashs-projects.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getAllArticles();

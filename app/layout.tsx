@@ -11,6 +11,9 @@ const notoSansJP = Noto_Sans_JP({
   weight: ["400", "500", "700"],
 });
 
+const SITE_URL =
+  process.env.SITE_URL || "https://fortune-blog-2brotherkome-hashs-projects.vercel.app";
+
 export const metadata: Metadata = {
   title: {
     default: "宿曜占い｜誕生日の宿",
@@ -18,10 +21,16 @@ export const metadata: Metadata = {
   },
   description:
     "生年月日から宿曜占星術であなたの宿（しゅく）を無料診断。空海が伝えた1200年の星の学問で、性格・運勢・恋愛・相性をお届け。",
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     type: "website",
     locale: "ja_JP",
     siteName: "宿曜占い｜誕生日の宿",
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@shukuyo_uranai",
   },
 };
 

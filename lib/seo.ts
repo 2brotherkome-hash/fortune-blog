@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 
+const SITE_URL =
+  process.env.SITE_URL || "https://fortune-blog-2brotherkome-hashs-projects.vercel.app";
+const SITE_NAME = "宿曜占い｜誕生日の宿";
+
 export function generateArticleMetadata({
   title,
   description,
@@ -13,15 +17,19 @@ export function generateArticleMetadata({
   slug: string;
   date: string;
 }): Metadata {
+  const url = `${SITE_URL}/${category}/${slug}`;
   return {
     title,
     description,
+    alternates: { canonical: url },
     openGraph: {
       title,
       description,
       type: "article",
       publishedTime: date,
-      url: `/${category}/${slug}`,
+      url,
+      siteName: SITE_NAME,
+      locale: "ja_JP",
     },
   };
 }
@@ -39,6 +47,7 @@ export function generateArticleJsonLd({
   category: string;
   slug: string;
 }) {
+  const url = `${SITE_URL}/${category}/${slug}`;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -47,15 +56,15 @@ export function generateArticleJsonLd({
     datePublished: date,
     author: {
       "@type": "Organization",
-      name: "マネ知恵",
+      name: SITE_NAME,
     },
     publisher: {
       "@type": "Organization",
-      name: "マネ知恵",
+      name: SITE_NAME,
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `/${category}/${slug}`,
+      "@id": url,
     },
   };
 }
@@ -70,7 +79,7 @@ export function generateBreadcrumbJsonLd(
       "@type": "ListItem",
       position: i + 1,
       name: item.name,
-      item: item.url,
+      item: item.url.startsWith("http") ? item.url : `${SITE_URL}${item.url}`,
     })),
   };
 }
