@@ -95,13 +95,6 @@ export default function Header() {
             >
               相性診断
             </Link>
-            <Link
-              href="/lp"
-              onClick={() => setMenuOpen(false)}
-              className="px-3 py-2.5 rounded-lg text-sm font-medium text-purple-300/70 hover:bg-purple-800/20 hover:text-purple-200 transition-colors"
-            >
-              宿を調べる
-            </Link>
           </nav>
         </div>
       )}

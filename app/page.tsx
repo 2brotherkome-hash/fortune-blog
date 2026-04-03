@@ -1,11 +1,8 @@
 import Link from "next/link";
-import ArticleCard from "@/components/ArticleCard";
 import ShukuDiagnosisTool from "@/components/ShukuDiagnosisTool";
-import { getAllArticles } from "@/lib/markdown";
 import categories from "@/data/categories.json";
 
 export default function Home() {
-  const articles = getAllArticles();
 
   return (
     <div>
@@ -78,21 +75,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 最新記事 */}
-      <section>
-        <h2 className="text-xl font-bold text-purple-900 mb-4">最新記事</h2>
-        {articles.length === 0 ? (
-          <div className="bg-white rounded-lg border border-purple-200 p-8 text-center text-purple-400">
-            記事が追加されると表示されます
-          </div>
-        ) : (
-          <div className="grid gap-4">
-            {articles.map((article) => (
-              <ArticleCard key={`${article.category}/${article.slug}`} {...article} />
-            ))}
-          </div>
-        )}
-      </section>
     </div>
   );
 }
