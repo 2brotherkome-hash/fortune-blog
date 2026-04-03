@@ -87,12 +87,12 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* 関連記事リンク */}
       {(category === "seikaku" || category === "unmei") && (() => {
-        const shukuName = category === "seikaku"
-          ? slug.replace("shuku", "")
-          : slug.replace("unmei", "");
+        const base = category === "seikaku"
+          ? slug.replace(/-shuku$/, "")
+          : slug.replace(/-unmei$/, "");
         const otherCategory = category === "seikaku" ? "unmei" : "seikaku";
-        const otherSlug = category === "seikaku" ? `${shukuName}unmei` : `${shukuName}shuku`;
-        const otherLabel = category === "seikaku" ? `${shukuName}宿の恋愛・運勢を見る` : `${shukuName}宿の性格・才能を見る`;
+        const otherSlug = category === "seikaku" ? `${base}-unmei` : `${base}-shuku`;
+        const otherLabel = category === "seikaku" ? "この宿の恋愛・運勢を見る" : "この宿の性格・才能を見る";
         return (
           <section className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Link
@@ -112,7 +112,7 @@ export default async function ArticlePage({ params }: Props) {
               <span className="text-2xl">💫</span>
               <div>
                 <p className="text-xs text-purple-400 mb-0.5">診断ツール</p>
-                <p className="text-sm font-bold text-purple-800 group-hover:text-purple-600">{shukuName}宿の相性を調べる →</p>
+                <p className="text-sm font-bold text-purple-800 group-hover:text-purple-600">この宿の相性を調べる →</p>
               </div>
             </Link>
           </section>

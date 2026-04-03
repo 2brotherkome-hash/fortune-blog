@@ -3,13 +3,13 @@ import { useState } from "react";
 import Link from "next/link";
 
 const SHUKU_LIST = [
-  { name: "昴" }, { name: "畢" }, { name: "觜" }, { name: "参" },
-  { name: "井" }, { name: "鬼" }, { name: "柳" }, { name: "星" },
-  { name: "張" }, { name: "翼" }, { name: "軫" }, { name: "角" },
-  { name: "亢" }, { name: "氐" }, { name: "房" }, { name: "心" },
-  { name: "尾" }, { name: "箕" }, { name: "斗" }, { name: "牛" },
-  { name: "女" }, { name: "虚" }, { name: "危" }, { name: "室" },
-  { name: "壁" }, { name: "奎" }, { name: "婁" },
+  { name: "昴", slug: "bou" }, { name: "畢", slug: "hitsu" }, { name: "觜", slug: "shi" }, { name: "参", slug: "san" },
+  { name: "井", slug: "sei" }, { name: "鬼", slug: "oni" }, { name: "柳", slug: "ryu" }, { name: "星", slug: "hoshi" },
+  { name: "張", slug: "cho" }, { name: "翼", slug: "yoku" }, { name: "軫", slug: "jin" }, { name: "角", slug: "kaku" },
+  { name: "亢", slug: "ko" }, { name: "氐", slug: "tei" }, { name: "房", slug: "fusa" }, { name: "心", slug: "kokoro" },
+  { name: "尾", slug: "bi" }, { name: "箕", slug: "mino" }, { name: "斗", slug: "to" }, { name: "牛", slug: "gyu" },
+  { name: "女", slug: "jo" }, { name: "虚", slug: "kyo" }, { name: "危", slug: "ki" }, { name: "室", slug: "shitsu" },
+  { name: "壁", slug: "heki" }, { name: "奎", slug: "kei" }, { name: "婁", slug: "ro" },
 ];
 
 function getShuku(month: number, day: number) {
@@ -18,6 +18,7 @@ function getShuku(month: number, day: number) {
   const days = Math.round((target.getTime() - ref.getTime()) / (1000 * 60 * 60 * 24));
   return SHUKU_LIST[((days % 27) + 27) % 27];
 }
+
 
 export default function SidebarDiagnosis() {
   const [month, setMonth] = useState("");
@@ -60,7 +61,7 @@ export default function SidebarDiagnosis() {
           <p className="text-purple-200 text-xs mb-1">あなたの宿</p>
           <p className="text-3xl font-bold mb-2">{result.name}宿</p>
           <Link
-            href={`/seikaku/${result.name}shuku`}
+            href={`/seikaku/${result.slug}-shuku`}
             className="block text-xs bg-white text-purple-800 font-bold py-1.5 rounded-lg hover:bg-purple-100 transition-colors"
           >
             詳細を見る →
