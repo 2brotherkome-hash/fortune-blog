@@ -55,18 +55,18 @@ export default async function ArticlePage({ params }: Props) {
       />
 
       {/* パンくず */}
-      <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
-        <Link href="/" className="hover:text-gray-700">ホーム</Link>
+      <nav className="flex items-center gap-2 text-sm text-purple-400/60 mb-6">
+        <Link href="/" className="hover:text-purple-300 transition-colors">ホーム</Link>
         <span>/</span>
-        <Link href={`/${category}`} className="hover:text-gray-700">
+        <Link href={`/${category}`} className="hover:text-purple-300 transition-colors">
           {cat?.name || category}
         </Link>
         <span>/</span>
-        <span className="text-gray-700 truncate">{article.title}</span>
+        <span className="text-purple-300/80 truncate">{article.title}</span>
       </nav>
 
       {/* 記事ヘッダー */}
-      <header className="mb-8">
+      <header className="mb-8 pb-6 border-b border-purple-800/30">
         {cat && (
           <span
             className="inline-block text-xs font-medium px-2 py-0.5 rounded-full text-white mb-3"
@@ -75,29 +75,20 @@ export default async function ArticlePage({ params }: Props) {
             {cat.name}
           </span>
         )}
-        <h1 className="text-3xl font-bold text-gray-900 mb-3">{article.title}</h1>
-        <time className="text-sm text-gray-500">{article.date}</time>
+        <h1 className="text-2xl font-bold text-purple-100 mb-3 leading-snug">{article.title}</h1>
+        <time className="text-sm text-purple-400/50">{article.date}</time>
       </header>
 
       {/* 記事本文 */}
       <div
-        className="prose prose-gray max-w-none mb-8
-          prose-headings:text-gray-900 prose-headings:font-bold
-          prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:pb-2 prose-h2:border-b prose-h2:border-gray-200
-          prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-3
-          prose-p:text-gray-700 prose-p:leading-relaxed
-          prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
-          prose-li:text-gray-700
-          prose-table:border prose-table:border-gray-200
-          prose-th:bg-gray-50 prose-th:p-3
-          prose-td:p-3 prose-td:border-t prose-td:border-gray-200"
+        className="article-prose max-w-none mb-8"
         dangerouslySetInnerHTML={{ __html: article.content }}
       />
 
       {/* アフィリエイトCTA */}
       {article.affiliateIds && article.affiliateIds.length > 0 && (
         <section className="mt-12 space-y-6">
-          <h2 className="text-xl font-bold text-gray-900">おすすめサービス</h2>
+          <h2 className="text-xl font-bold text-purple-100">おすすめサービス</h2>
           {article.affiliateIds.map((id) => (
             <AffiliateLink key={id} id={id} variant="card" />
           ))}

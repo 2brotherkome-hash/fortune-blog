@@ -15,11 +15,11 @@ export default function CTAButton({ id, text }: CTAButtonProps) {
         href={aff.url}
         target="_blank"
         rel="noopener noreferrer nofollow"
-        className="inline-block bg-orange-500 text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-orange-600 transition-colors shadow-lg hover:shadow-xl"
+        className="inline-block bg-gradient-to-r from-purple-500 to-violet-500 text-white font-bold text-lg px-8 py-4 rounded-xl hover:from-purple-400 hover:to-violet-400 transition-all shadow-lg shadow-purple-900/50"
       >
-        {text || `${aff.name}の口座を無料で開設する`}
+        {text || `${aff.name}を無料で登録する`}
       </a>
-      <p className="text-xs text-gray-500 mt-2">※申し込みは最短5分で完了します</p>
+      <p className="text-xs text-purple-400/50 mt-2">※申し込みは最短5分で完了します</p>
     </div>
   );
 }
