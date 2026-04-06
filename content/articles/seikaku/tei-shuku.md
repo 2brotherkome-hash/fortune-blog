@@ -3,7 +3,7 @@ title: "氐宿（ていしゅく）の性格・運勢・恋愛・相性【宿曜
 description: "氐宿（ていしゅく）生まれの性格、恋愛傾向、仕事運、相性の良い宿を宿曜占星術で徹底解説。"
 category: "seikaku"
 date: "2026-04-01"
-affiliateIds: ["coconala-tel", "coconala-uranai"]
+affiliateIds: ["ココナラ-tel", "ココナラ-uranai"]
 ---
 
 ## 氐宿（ていしゅく）とは

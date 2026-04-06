@@ -3,7 +3,7 @@ title: "氐宿（ていしゅく）の恋愛・仕事・金運｜宿曜占星術
 description: "氐宿生まれの恋愛傾向、仕事運、金運を宿曜占星術で詳しく解説。運気を上げるための具体的なアドバイスも紹介。"
 category: "unmei"
 date: "2026-04-01"
-affiliateIds: ["coconala-tel", "coconala-uranai"]
+affiliateIds: ["ココナラ-tel", "ココナラ-uranai"]
 ---
 
 ## 氐宿（ていしゅく）の運命の特徴
